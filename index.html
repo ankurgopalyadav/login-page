@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to top left, #3ed8ff,#a8f5ff);
+    }
+    .sign-inner{
+        width: 400px;
+        margin: 0 auto;
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+        padding: 20px 40px;
+        background: linear-gradient(to top left,#ffffff,#ffffff33);
+        backdrop-filter: blur(8px);
+        border-radius: 8px;
+        box-shadow: 20px 20px 5px #3ed8ff;
+        z-index: 2;
+    }
+    .signin h1{
+        font-size: 2.5rem;
+        color: #212121;
+    }
+    .signin p{
+        font-size: 0.9rem;
+        color: #555;
+    }
+    .signbody{
+        margin: 20px 0px;
+    }
+    .signbody p{
+        margin: 10px 0px;
+    }
+    .signbody p label{
+        display: block;
+        font-weight: bold;
+    }
+    .signbody p input{
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #cccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        margin-top: 4px;
+    }
+    .signbody p input[type="submit"]{
+        background-color: #3498db;
+        border: none;
+        color: #ffff;
+        cursor: pointer;
+    }
+    .signbody p input[type="submit"]:hover{
+        background-color: #3ed8ff;
+    }
+    .signup p{
+        color: #555;
+        text-align: center;
+    }
+    .signup p a{
+        color: #3498db;
+    }
+    .circle{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background: linear-gradient(to top right,#ffffff33,#ffffff);
+        position: absolute;
+    }
+    .c1{
+        top: 100px;
+        left: 40px;
+    }
+    .c2{
+        bottom: 100px;
+        right: 40px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="sign-inner">
+            <header class="signin">
+                <h1>SignUp</h1>
+                <p>It Just Takes 30 seconds</p>
+            </header>
+            <main class="signbody">
+                <form action="#">   
+                    <p>
+                        <label for="name">Name:</label required>
+                            <input type="text" id="name" placeholder="Enter Your Name">
+                        </p>
+                        <p>
+                            <label for="mail">Email:</label>
+                            <input type="email" id="email" placeholder="Enter Your Email">
+                        </p>
+                        <p>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" placeholder="Atleast 8 Character"required>
+                        </p>
+                        <p>
+                            <input type="submit"  id="submit" value="Create Account" >
+                        </p>
+                </form>
+            </main>
+            <footer class="signup">
+                <p>Already have an account? <a href="#">login</a></p>
+            </footer>
+        </div>
+    </div>
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+</body>
+</html>
